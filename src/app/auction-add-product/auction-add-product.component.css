@@ -1,0 +1,68 @@
+.add-product-container {
+    width: 75%;
+    margin-left: 14%;
+    height: 100%;
+    background-color: white;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    padding-bottom: 20px;
+}
+
+.input-product {
+    width: 25%;
+    margin-left: 5%;
+    display: inline;
+}
+
+.title-text {
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    width: 48%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+
+.btn-grad {
+    margin-top: 35px;
+    background-image: linear-gradient(to right,#3d78ef 0%, #0775e7 51%, #2a4ae7 100%);
+    padding: 15px 20px;
+    margin-left: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    height: 50px;
+    width: 21%;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    margin-left: 5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.btn-grad {
+    padding: 15px 17px;
+    height: 63px;
+    width: 43%;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 600px) and (max-width: 1000px) {
+    .btn-grad {
+        width: 35%;
+    }
+}

@@ -1,0 +1,92 @@
+.header-container {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(50,152,203);
+    padding: 0;
+    text-align: center;
+}
+
+.header-logo {
+    background: url('../../assets/e-auction.png') no-repeat;
+    background-size: cover;
+    height: 65px;
+    left: 340px;
+    width: 75px;
+    position: absolute;
+}
+
+.menu-logo {
+    background: url('../../assets/menu.png') no-repeat;
+    background-size: cover;
+    height: 46px;
+    left: 10px;
+    margin-top: 17px;
+    width: 43px;
+    position: absolute;
+}
+
+.header-title {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 300;
+    font-size: 3.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 85px;
+}
+
+.register {
+    float: right;
+    margin-right: 100px;
+    margin-top: 29px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 600;
+}
+
+.login {
+    float: right;
+    margin-right: -11%;
+    align-items: center;
+    margin-top: 29px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 600;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-logo {
+        height: 39px;
+        left: 56px;
+        width: 40px;
+        margin-top: 21px;
+        position: absolute;
+        margin-left: 5px;
+    }
+
+    .header-title {
+        font-family: "Roboto","Helvetica","Arial",sans-serif;
+        font-weight: 300;
+        font-size: 1.75rem;
+        line-height: 1.2;
+        letter-spacing: -0.00833em;
+        color: rgba(0, 0, 0, 0.6);
+        margin-left: 130px;
+        padding-top: 20px;
+        display: flex;
+    }
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }

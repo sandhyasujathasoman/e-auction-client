@@ -1,0 +1,126 @@
+.dashboard-container {
+    width: 75%;
+    margin-left: 14%;
+    /* margin-right: 44%; */
+    height: 190vh;
+    /* background-color: #cdafc6; */
+    background-color: white;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.btn-group {
+    float: right;
+    width: 55%;
+    padding-top: 12%;
+}
+
+.product-details{
+    padding-bottom: 10%;
+    padding-top: 20%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.bid-details{
+    padding-bottom: 10%;
+    padding-top: 5%;
+    margin-left: 25%;
+}
+
+.bid-title {
+    text-align: center;
+}
+
+.product-label {
+    font-size: 16px;
+    margin-left: 50%;
+    width: 100%;
+}  
+.product-labels {
+    margin-right: 2%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tab-header {
+    margin: 10px;
+}
+
+.menu-container {
+    width: 100%;
+    height: 50px;
+    background-color: #3d78ef;
+}
+
+.btn-grad {
+    float: right;
+    margin-top: 35px;
+    padding: 10px 20px;
+    /* background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%); */
+    background-image: linear-gradient(to right,#3d78ef 0%, #0775e7 51%, #2a4ae7 100%);
+    margin-right: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    height: 50px;
+}
+
+.table-responsive {
+    margin-left: 5%;
+    overflow-x: auto;
+    width: 90%;
+}
+
+.no-bid-text {
+    text-align: center;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-holder {
+    margin-bottom: 10%;
+}
+
+.select-holder {
+    margin-top: 33%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .btn-grad {
+        float: right;
+        margin-top: 35px;
+        padding: 4px 3px;
+        margin-right: 6%;
+        display: flex;
+        height: 33px;
+    }
+
+    .btn-group {
+        float: right;
+        width: 88%;
+        padding-top: 12%;
+        padding-right: 9%;
+    }
+
+    .product-details {
+        padding-bottom: 10%;
+        padding-top: 20%;
+        margin-left: 13%;
+        width: 74%;
+    }
+
+    .product-label {
+        font-size: 16px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+}

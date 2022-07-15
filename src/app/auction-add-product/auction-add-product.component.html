@@ -1,0 +1,83 @@
+<div class="add-product-container">
+    <form [formGroup]="productForm" (ngSubmit)="addProduct(mymodal)">
+    <h2 class="title-text">Please enter the product details</h2>
+    <div class="form-group input-product">
+        <label for="pdt">Product Name:</label>
+        <input formControlName="productName" type="text" class="form-control" id="pdt">
+      </div>
+      <div class="form-group input-product">
+        <label for="sd">Short Description:</label>
+        <input formControlName="shortDescription" type="text" class="form-control" id="sd">
+      </div>
+      <div class="form-group input-product">
+        <label for="dd">Detailed Description:</label>
+        <input formControlName="detailedDescription" type="text" class="form-control" id="dd">
+      </div>
+      <div class="form-group input-product">
+        <label for="cat">Category:</label>
+        <input formControlName="category" type="text" class="form-control" id="cat">
+      </div>
+      <div class="form-group input-product">
+        <label for="startPrc">Starting Price:</label>
+        <input formControlName="startingPrice" type="text" class="form-control" id="startPrc">
+      </div>
+      <div class="form-group input-product">
+        <label for="bend">Bid End Date:</label>
+        <input formControlName="bidEndDate" type="text" class="form-control" id="bend">
+      </div>
+
+      <h2 class="title-text">Please enter the seller details</h2>
+    <div class="form-group input-product">
+        <label for="fn">First Name:</label>
+        <input formControlName="firstName" type="text" class="form-control" id="fn">
+      </div>
+      <div class="form-group input-product">
+        <label for="ln">Last Name:</label>
+        <input formControlName="lastName" type="text" class="form-control" id="ln">
+      </div>
+      <div class="form-group input-product">
+        <label for="add">Address:</label>
+        <input formControlName="address" type="text" class="form-control" id="add">
+      </div>
+      <div class="form-group input-product">
+        <label for="cty">City:</label>
+        <input formControlName="city" type="text" class="form-control" id="cty">
+      </div>
+      <div class="form-group input-product">
+        <label for="state">State:</label>
+        <input formControlName="state" type="text" class="form-control" id="state">
+      </div>
+      <div class="form-group input-product">
+        <label for="pin">Pin:</label>
+        <input formControlName="pin" type="text" class="form-control" id="pin">
+      </div>
+      <div class="form-group input-product">
+        <label for="email">Email:</label>
+        <input formControlName="email" type="text" class="form-control" id="email">
+      </div>
+      <div class="form-group input-product">
+        <label for="phn">Phone:</label>
+        <input formControlName="phone" type="text" class="form-control" id="phn">
+      </div>
+      <div class="error-message" *ngIf="inValidControl">
+        <label>Please enter required information</label>
+      </div>
+      
+      <button class="btn-grad" (click)="addProduct(mymodal)">Add Product</button>
+      <button class="btn-grad" (click)="back()">Back</button>
+    </form>
+</div>
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Product Added</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      Product is successfully added
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+    </div>
+  </ng-template>
